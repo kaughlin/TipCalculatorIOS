@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="a2o-Th-nb4"/>
                                 </connections>
@@ -90,6 +90,8 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Dd4-0u-H8V"/>
                     <connections>
                         <outlet property="billField" destination="tH0-9P-dOM" id="Q4U-jw-LdI"/>
+                        <outlet property="tipLabel" destination="UF8-Y6-Dpu" id="14C-RJ-AbJ"/>
+                        <outlet property="totalLabel" destination="mpw-vD-KPx" id="Juq-YA-WAv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
