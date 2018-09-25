@@ -67,6 +67,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="a2o-Th-nb4"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="T6I-Ti-Wfe">
                                 <rect key="frame" x="16" y="274" width="343" height="29"/>
@@ -79,10 +82,22 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xaU-xg-ghJ" appends="YES" id="oIC-zT-asM"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Dd4-0u-H8V"/>
+                    <connections>
+                        <outlet property="billField" destination="tH0-9P-dOM" id="Q4U-jw-LdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xaU-xg-ghJ">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="9ks-Tb-J2h"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
